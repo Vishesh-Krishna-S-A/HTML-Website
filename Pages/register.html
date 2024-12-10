@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Coding Ninjas - Register" />
+		<meta
+			name="keywords"
+			content="coding ninjas, register, coding, ninjas, software development, course, job bootcamp"
+		/>
+		<meta name="author" content="visheshkrishnasa" />
+
+		<title>Coding Ninjas - Register</title>
+	</head>
+	<body>
+		<header>
+			<!-- Logo -->
+			<img src="../assets/images/new_cn_logo.svg" alt="Coding Ninjas Logo" width="200px" />
+
+			<!-- Account Head -->
+			<h1>Create an Account</h1>
+		</header>
+
+		<main>
+			<!-- Registration Form -->
+			<form action="" method="post">
+				<!-- Personal Information -->
+				<fieldset>
+					<legend>Personal Information</legend>
+
+					<label for="full-name">Full Name:</label>
+					<input
+						type="text"
+						name="full-name"
+						id="full-name"
+						placeholder="John Doe"
+						minlength="3"
+						maxlength="32"
+						required
+					/>
+
+					<br /><br />
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="john.doe@gmail.com" required />
+
+					<br /><br />
+
+					<label for="username">Username:</label>
+					<input
+						type="text"
+						name="username"
+						id="username"
+						placeholder="johndoe"
+						minlength="4"
+						maxlength="10"
+						required
+					/>
+
+					<br /><br />
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" minlength="8" maxlength="16" required />
+
+					<br /><br />
+
+					<label for="user-type">User Type:</label>
+					<select name="user-type" id="user-type" required>
+						<option value="">Select user type</option>
+					</select>
+
+					<br /><br />
+
+					<label for="course">Select course</label>
+					<select name="course" id="course" required>
+						<option value="Course 1 - Web Development">Course 1 - Web Development</option>
+						<option value="Course 2 - Data Science Fundamentals">
+							Course 2 - Data Science Fundamentals
+						</option>
+						<option value="Course 3 - Digital Marketing Mastery">
+							Course 3 - Digital Marketing Mastery
+						</option>
+						<option value="Course 4 - Android Development">Course 4 - Android Development</option>
+					</select>
+
+					<br /><br />
+
+					<button type="submit">Register</button>
+				</fieldset>
+			</form>
+		</main>
+	</body>
 </html>
